@@ -1,20 +1,28 @@
 package ru.netology.domain;
 
 public class Post {
-    private int id; //идентификатор поста
-    private int userId; //идентификатор пользователя, на чьей стене размещен пост
-    private int date; // время публикации
-    private String postContent; // содержание публикации
-    private int likeCount; // количество лайков
-    private int commentId; //идентификатор комменатарий
-    private int userCommentId; //идентификатор пользователя,который оставил комменатарий
-    private String commentContent; // содержание комменатария
-    private int repostCount; // количество репостов
-    private int userRepostId; //идентификатор пользователей, репостнувших запись
-    private int viewsCount; // коичество прсмотров
+    private int id;
+    private int ownerId;
+    private int fromId;
+    private int replyOwnerId;
+    private int replyPostId;
+    private int friendsOnly;
+    private int createdBy;
+    private int date;
+    private String text;
+    private int previewCount;
+    private CommentsInfo commentsInfo;
+    private CopyrightInfo copyrightInfo;
+    private LikesInfo likesInfo;
+    private RepostsInfo repostsInfo;
+    private ViewsInfo viewsInfo;
+
 
 
     // do setters & getters
+
+
+
 
 
 }
